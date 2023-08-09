@@ -9,15 +9,21 @@ import {
   MenuList,
   Text,
 } from "@chakra-ui/react";
-import { ArrowDown2, HambergerMenu, ShoppingBag, ShoppingCart } from "iconsax-react";
+import {
+  ArrowDown2,
+  HambergerMenu,
+  ShoppingBag,
+  ShoppingCart,
+} from "iconsax-react";
 import React from "react";
-import {TiShoppingCart}from 'react-icons/ti'
+import { TiShoppingCart } from "react-icons/ti";
 import { Link } from "react-router-dom";
+import Cart from "../components/Cart";
 
 const SecondHeader = () => {
   return (
-    <Box >
-      <Flex justifyContent={'space-around'} alignItems={'center'}>
+    <Box>
+      <Flex justifyContent={"space-between"} px={20} alignItems={"center"}>
         <Menu>
           <MenuButton
             bg={"darkorange"}
@@ -40,21 +46,17 @@ const SecondHeader = () => {
         </Menu>
 
         <Box>
-            <Flex alignItems={'center'} gap={10}>
-                <Link>Home</Link>
-                <Link>Best Sales</Link>
-                <Link>Services</Link>
-                <Link>Promotions</Link>
-                <Link>Blog</Link>
-                <Link>Pages</Link>
-                
-                <Box pos={'relative'}>
+          <Flex alignItems={"center"} gap={10} justifyContent={"center"}>
+            <Link>Home</Link>
+            <Link>Best Sales</Link>
+            <Link>Services</Link>
+            <Link>Promotions</Link>
 
-                <IconButton bg={'none'} _hover={'none'} icon={<TiShoppingCart size={40} />}></IconButton>
-                <Text py={2} px={3.5} top={-3} right={-3} fontWeight={900} fontSize={10} pos={'absolute'} borderRadius={40} bg={'darkorange'}>1</Text>
-                </Box>
-                <Button bg={'darkorange'} color={'white'}>Sign Up</Button>
-            </Flex>
+            <Cart />
+            <Button bg={"darkorange"} color={"white"}>
+              Sign Up
+            </Button>
+          </Flex>
         </Box>
       </Flex>
     </Box>

@@ -20,11 +20,11 @@ const SearchBar = () => {
             Categories
           </MenuButton>
           <MenuList>
-            <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+            <MenuItem>Hausa</MenuItem>
+            <MenuItem>Igbo</MenuItem>
+            <MenuItem>Yoruba</MenuItem>
+            <MenuItem>Calabar</MenuItem>
+            <MenuItem>Intercontinantal Dishes</MenuItem>
           </MenuList>
         </Menu>
 

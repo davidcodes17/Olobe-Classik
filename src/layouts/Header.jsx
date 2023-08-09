@@ -6,7 +6,7 @@ import GetInTouch from '../components/GetInTouch'
 
 const Header = () => {
   return (
-    <Box>
+    <Box mt={0}>
         <Flex align={'center'} justifyContent={'space-around'}>
             <Logo />
             <SearchBar />

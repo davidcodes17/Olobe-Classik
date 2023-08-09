@@ -5,3 +5,10 @@
     scroll-behavior: smooth;
     font-family: Poppins !important;
 }
+body{
+    background: #fafafabc !important;
+    /* background: #0091f1; */
+}
+.color{
+    color: darkorange;
+}
