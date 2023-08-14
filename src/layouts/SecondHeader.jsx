@@ -16,27 +16,27 @@ import {
   ShoppingCart,
 } from "iconsax-react";
 import React from "react";
-import { TiShoppingCart } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import Cart from "../components/Cart";
 
 const SecondHeader = () => {
   return (
-    <Box>
-      <Flex justifyContent={"space-between"} px={20} alignItems={"center"}>
+    <Box pl={5}>
+      <Flex justifyContent={"space-between"} px={'130px'} alignItems={"center"}>
         <Menu>
           <MenuButton
-            bg={"darkorange"}
-            py={"25px"}
+            bg={"linear-gradient(45deg,darkorange,tomato)"}
             _hover={"none"}
             as={Button}
+            fontSize={10}
             color={"white"}
-            leftIcon={<HambergerMenu />}
-            rightIcon={<ArrowDown2 />}
+            borderRadius={40}
+            leftIcon={<HambergerMenu size={10} />}
+            rightIcon={<ArrowDown2 size={10} />}
           >
             Categories
           </MenuButton>
-          <MenuList>
+          <MenuList fontSize={10}>
             <MenuItem>Download</MenuItem>
             <MenuItem>Create a Copy</MenuItem>
             <MenuItem>Mark as Draft</MenuItem>
@@ -46,14 +46,14 @@ const SecondHeader = () => {
         </Menu>
 
         <Box>
-          <Flex alignItems={"center"} gap={10} justifyContent={"center"}>
+          <Flex alignItems={"center"} gap={10} justifyContent={"center"} fontSize={10}>
             <Link>Home</Link>
             <Link>Best Sales</Link>
             <Link>Services</Link>
             <Link>Promotions</Link>
 
             <Cart />
-            <Button bg={"darkorange"} color={"white"}>
+            <Button fontSize={10} height={'40px'} p={'10px 40px'} _hover={'none'} borderRadius={40} bg={"linear-gradient(45deg,darkorange,tomato)"} color={"white"}>
               Sign Up
             </Button>
           </Flex>

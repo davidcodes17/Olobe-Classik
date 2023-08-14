@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
 import Header from '../layouts/Header'
 import SecondHeader from '../layouts/SecondHeader'

@@ -9,15 +9,15 @@ const FeaturedProducts = () => {
     <Box p={"40px"}>
       <Flex justifyContent={'center'}>
         <Box>
-          <Heading textAlign={'center'} fontSize={50} py={10}>Featured Products</Heading>
+          <Heading textAlign={'center'} fontSize={30} py={10}>Featured Products</Heading>
           <Box>
             <Flex gap={10} py={5}>
-              <Box className="left" bg={'white'} p={5} boxShadow={'0px 0px 10px #ddd'} width={300} borderRadius={40} height={350}>
+              <Box className="left" bg={'white'} boxShadow={'0px 0px 10px #ddd'} borderRadius={40} width={250} height={290} pt={4}>
                     <CardComponent />
               </Box>
               <Box className="rightSide">
-                <Heading>Get <span className="color">20% Discount</span> on <br /> Your First Sale!</Heading>
-                <Text>
+                <Heading fontSize={30}>Get <span className="color">20% Discount</span> on <br /> Your First Sale!</Heading>
+                <Text fontSize={10}>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </Text>
                 <Flex gap={10} py={4}>

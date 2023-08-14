@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Flex justifyContent={'space-around'}>
       <Box bg={"gray.800"} p={5} color={"white"} mt={20} borderTopRadius={40}>
-        <Flex alignItems={"center"} gap={10}>
+        <Flex alignItems={"center"} gap={20}>
           <Image
             src="/logo/1.png"
             width={"25%"}
@@ -17,11 +17,11 @@ const Footer = () => {
             whileDrag={{ scale: 1.1 }}
           />
           <Box>
-            <Text fontSize={25} fontWeight={900}>
+            <Text fontSize={15} fontWeight={900}>
               Customer Service
             </Text>
 
-            <Box pt={4}>
+            <Box pt={4} fontSize={10}>
               <Text>Testimonials</Text>
               <Text>Contact</Text>
               <Text>Location & Working Hours</Text>
@@ -31,11 +31,11 @@ const Footer = () => {
             </Box>
           </Box>
           <Box>
-            <Text fontSize={25} fontWeight={900}>
+            <Text fontSize={15} fontWeight={900}>
               Quick Links
             </Text>
 
-            <Box pt={4}>
+            <Box pt={4} fontSize={10}>
               <Text>Your Account</Text>
               <Text>Returns & Exchanges</Text>
               <Text>Return Center</Text>
@@ -45,11 +45,11 @@ const Footer = () => {
             </Box>
           </Box>
           <Box>
-            <Text fontSize={25} fontWeight={900}>
+            <Text fontSize={15} fontWeight={900}>
               Accounts
             </Text>
 
-            <Box pt={4}>
+            <Box pt={4} fontSize={10}>
               <Text>My Account</Text>
               <Text>My Cart</Text>
               <Text>My Checkout</Text>

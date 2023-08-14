@@ -4,8 +4,8 @@ import React from 'react'
 const Logo = () => {
   return (
     <Flex alignItems={'center'}>
-        <Image src='/logo/1.png' width={'100px'} />
-        <Text fontSize={25}>Olobe Classik</Text>
+        <Image src='/logo/1.png' width={'60px'} />
+        <Text fontSize={15}>Olobe Classik</Text>
     </Flex>
   )
 }

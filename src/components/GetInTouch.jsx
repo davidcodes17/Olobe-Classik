@@ -4,14 +4,9 @@ import React from "react";
 
 const GetInTouch = () => {
   return (
-    <Flex alignItems={'center'} gap={5}>
-      <IconButton
-        icon={<CallIncoming variant="Bold" color="white" />}
-        bg={"#000"}
-        _hover={"none"}
-        borderRadius={40}
-      ></IconButton>
-      <Box>
+    <Flex alignItems={"center"} gap={2}>
+      <CallIncoming size={20} variant="Bold" color="black" />
+      <Box fontSize={10}>
         <Text>Get In Touch</Text>
         <a href="Tel:+2348094601448">+2348094601448</a>
       </Box>

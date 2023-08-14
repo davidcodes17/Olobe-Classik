@@ -7,10 +7,10 @@ const SoupCategories = (props) => {
     <Flex bg={'white'} boxShadow={'0px 0px 10px #ddd'} borderRadius={40} cursor={'pointer'} as={motion.div} whileHover={{scale : 1.1}}>
       <Box
         as={motion.div}
-        whileHover={{ background : "darkorange", color : "white",transition : 2}}
-        p={10}
+        whileHover={{ background : "linear-gradient(45deg,darkorange,tomato)", color : "white",transition : 2}}
         borderRadius={40}
-        maxWidth={"240px"}
+        maxWidth={"200px"}
+        py={8}
         textAlign={"center"}
         bg={'white'}
       >
@@ -18,14 +18,11 @@ const SoupCategories = (props) => {
           <Image
             justifyContent={"center"}
             src={props.img}
-            width={"100%"}
+            width={"50%"}
           />
         </Flex>
-        <Text fontWeight={900} fontSize={25}>{props.name}</Text>
-        <Text>25 Items</Text>
-        {/* <Text>Hausa</Text>
-        <Text>Igbo</Text>
-        <Text>Extras</Text> */}
+        <Text fontWeight={900} fontSize={15}>{props.name}</Text>
+        <Text fontSize={10}>25 Items</Text>
       </Box>
     </Flex>
   );

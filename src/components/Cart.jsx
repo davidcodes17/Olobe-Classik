@@ -8,20 +8,18 @@ const Cart = () => {
               <IconButton
                 bg={"none"}
                 _hover={"none"}
-                icon={<TiShoppingCart size={40} />}
+                icon={<TiShoppingCart size={20} />}
               ></IconButton>
               <Text
-                py={2}
-                px={3.5}
-                top={-3}
-                right={-3}
-                fontWeight={900}
-                fontSize={10}
+              top={1}
+              left={6}
+                p={'1px 3px'}
+                fontSize={6}
                 pos={"absolute"}
                 borderRadius={40}
-                bg={"darkorange"}
+                bg={"linear-gradient(45deg,darkorange,tomato);"}
               >
-                1
+                0
               </Text>
             </Box>
   )

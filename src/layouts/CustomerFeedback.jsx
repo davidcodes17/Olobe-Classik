@@ -8,7 +8,7 @@ const CustomerFeedback = () => {
     <Box>
       <Flex justifyContent={"space-around"}>
         <Box textAlign={"center"}>
-          <Heading>Our Customer Feedback</Heading>
+          <Heading fontSize={25}>Our Customer Feedback</Heading>
           <Text fontSize={10}>
             Interactive product distinctive paradigms where as one-to-one
             intellectual capital <br />

@@ -16,10 +16,10 @@ const SearchBar = () => {
     <Box>
       <Flex border={'1.4px solid #ddd'} borderRadius={10}>
         <Menu>
-          <MenuButton bg={'none'} py={'25px'} _hover={'none'} as={Button} rightIcon={<ArrowDown2 />}>
+          <MenuButton bg={'none'} py={'0px'} fontSize={10} _hover={'none'} as={Button} rightIcon={<ArrowDown2 size={10} />}>
             Categories
           </MenuButton>
-          <MenuList>
+          <MenuList fontSize={8}>
             <MenuItem>Hausa</MenuItem>
             <MenuItem>Igbo</MenuItem>
             <MenuItem>Yoruba</MenuItem>
@@ -28,8 +28,8 @@ const SearchBar = () => {
           </MenuList>
         </Menu>
 
-        <Input height={'48px'} width={200} border={'none'} />
-        <Button color={'white'} bg={'darkorange'} _hover={'none'} py={'25px'} leftIcon={<SearchNormal />}>Search</Button>
+        <Input width={300} border={'none'} />
+        <Button color={'white'} bg={'linear-gradient(45deg,darkorange,tomato)'} _hover={'none'} leftIcon={<SearchNormal size={10} />} fontSize={10}>Search</Button>
       </Flex>
     </Box>
   );

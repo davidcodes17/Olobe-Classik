@@ -8,7 +8,7 @@ const Categories = () => {
     <Box pt={20}>
         <Flex justifyContent={'space-around'}>
               <Box>
-                  <Heading>Browse All Categories</Heading>
+                  <Heading fontSize={20}>Browse All Categories</Heading>
                   <Text>We have all Nigerian Soups for different tribes and culture</Text>
                   <Flex gap={10} alignItems={'center'} py={10}>
                     <SoupCategories name='Yoruba' img='logo/vegetable.png' />

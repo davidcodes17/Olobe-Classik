@@ -1,14 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* transition: all .4s; */
-    scroll-behavior: smooth;
-    font-family: Poppins !important;
+* {
+  margin: 0;
+  padding: 0;
+  /* transition: all .4s; */
+  scroll-behavior: unset;
+  font-family: Poppins !important;
 }
-body{
-    background: #fafafabc !important;
-    /* background: #0091f1; */
+body {
 }
-.color{
-    color: darkorange;
+.color {
+  color: darkorange;
+}
+.admin {
+  padding: 20px;
+  color: #fff;
+  background: #000;
+}
+.sideBar * {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #000;
+}
+input {
+  box-shadow: 0px 0px 0px black !important;
 }

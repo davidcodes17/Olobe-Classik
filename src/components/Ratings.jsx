@@ -10,7 +10,7 @@ const Ratings = (props) => {
       cursor={'pointer'}
       padding={10}
       as={motion.div}
-      whileHover={{y : 20}}
+      whileHover={{y : 40}}
       boxShadow={'0px 0px 10px #ddd'}
       bg={"white"}
       width={"fit-content"}
@@ -19,10 +19,10 @@ const Ratings = (props) => {
       <Flex pb={5} justifyContent={"center"}>
         {props.icon}
       </Flex>
-      <Text fontSize={30} fontWeight={900}>
+      <Text fontSize={20} fontWeight={900}>
         456k+
       </Text>
-      <Text>Followers</Text>
+      <Text fontSize={10}>Followers</Text>
     </Box>
   );
 };

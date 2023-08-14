@@ -14,7 +14,7 @@ const ClientBox = () => {
       <Flex gap={5}>
         <Box p={6} bg={"#000"} borderRadius={40}></Box>
         <Box>
-          <Text fontWeight={900}>George Nakashima</Text>
+          <Text fontWeight={500}>George Nakashima</Text>
           <Box>
             <Flex justifyContent={"left"}>
               <Star1 variant="Bold" color="darkorange" size={20} />
