@@ -24,27 +24,27 @@ import Logo from "../../../components/Logo";
 
 const NavSection = () => {
   return (
-    <Box className="sideBar" px={7}>
+    <Box className="sideBar" bg={'whiteAlpha.100'} position={'absolute'} px={5} borderRadius={40} top={'40px'}>
       <Link>
-        <Home variant="Outline" />
+        <Home variant="Bold" />
       </Link>
       <Link>
-        <Category />
+        <Category variant='Bold' />
       </Link>
       <Link>
-        <Task />
+        <Task variant='Bold' />
       </Link>
       <Link>
-        <Message />
+        <Message variant='Bold' />
       </Link>
       <Link>
-        <TrendUp />
+        <TrendUp variant='Bold' />
       </Link>
       <Link>
-        <User />
+        <User variant='Bold' />
       </Link>
       <Link>
-        <Setting2 />
+        <Setting2 variant='Bold' />
       </Link>
     </Box>
   );

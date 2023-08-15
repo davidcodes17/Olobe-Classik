@@ -16,9 +16,9 @@ body {
   background: #000;
 }
 .sideBar * {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background: #000;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
 }
 input {
   box-shadow: 0px 0px 0px black !important;

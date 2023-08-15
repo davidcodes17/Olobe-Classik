@@ -6,8 +6,8 @@ import DashBody from "./lays/DashBody";
 const Index = () => {
   return (
     <Box className="admin">
-      <Box>
-        <Flex gap={20}>
+      <Box py={0}>
+        <Flex>
           <NavSection />
           <DashBody />
         </Flex>

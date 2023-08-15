@@ -14,7 +14,7 @@ const MainDash = () => {
         </Flex>
       </Box>
       <Box>
-        <Text>Dashboard</Text>
+        <Text>Olobe Classik</Text>
       </Box>
       <Box>
         <Admin />
