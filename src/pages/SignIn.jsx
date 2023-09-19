@@ -1,7 +1,42 @@
 import { Box, Button, Flex, FormControl, FormLabel, Input, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 
 const SignIn = () => {
+  const url = "http://localhost:8080/api/v1/login";
+  const [form, setForm] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleSignIn = () => {
+    fetch(url, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: form.email,
+        password: form.password,
+      }),
+    })
+      .then((res) => {
+        res.json();
+        console.log(res.status)
+        if(res.status==200){
+          console.log("mem")
+        }
+        else{
+          console.log("first")
+        }
+      })
+      .then((data) => {
+        localStorage.setItem(1,data);
+        console.log(data.username);
+      }).catch((err)=>{
+        // console.log(err)
+      });
+  };
   return (
     <Box mt={"80px"}>
       <Flex justifyContent={"center"}>
@@ -17,26 +52,36 @@ const SignIn = () => {
             <br />
             perspiciatis quidem quibusdam, soluta doloribus reprehenderit vel
           </Text>
-          <FormControl my={5}>
-            <form action="">
+          <FormControl my={5} isRequired>
+            <form>
               <FormLabel pt={3}>Email</FormLabel>
               <Input
-                required
                 borderRadius={40}
                 name="email"
                 type="email"
+                value={form.email}
+                onChange={(e) => {
+                  setForm({ ...form, email: e.target.value });
+                }}
                 fontSize={12}
                 placeholder="you@gmail.com"
               />
+              <FormControl />
+              <FormControl isRequired>
               <FormLabel pt={3}>Secrect Password</FormLabel>
               <Input
                 name="password"
                 borderRadius={40}
-                required
+                minLength={10}
                 fontSize={12}
+                value={form.password}
+                onChange={(e) => {
+                  setForm({ ...form, password: e.target.value });
+                }}
                 type="password"
                 placeholder="**************"
                 />
+                </FormControl>
               <Flex gap={5}>
                 <Button
                   type="reset"
@@ -59,6 +104,10 @@ const SignIn = () => {
                   bg={"linear-gradient(45deg,darkorange,tomato);"}
                   borderRadius={40}
                   width={"100%"}
+                  onClick={(e)=>{
+                    e.preventDefault();
+                    handleSignIn();
+                  }}
                   _hover={"none"}
                   color={"white"}
                 >

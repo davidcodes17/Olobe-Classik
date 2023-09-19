@@ -9,6 +9,7 @@ import {
   Star1,
 } from "iconsax-react";
 import React from "react";
+import Stars from "./Stars";
 
 const CardComponent = () => {
   return (
@@ -19,13 +20,7 @@ const CardComponent = () => {
         </Flex>
         <Flex justifyContent={"center"}>
           <Box>
-            <Flex justifyContent={"center"}>
-              <Star1 variant="Bold" color="darkorange" size={20} />
-              <Star1 variant="Bold" color="darkorange" size={20} />
-              <Star1 variant="Bold" color="darkorange" size={20} />
-              <Star1 variant="Bulk" color="darkorange" size={20} />
-              <Star1 variant="Outline" color="darkorange" size={20} />
-            </Flex>
+            <Stars />
             <Text py={2} fontSize={15}>
               Nigerian Vegetable Soup
             </Text>
